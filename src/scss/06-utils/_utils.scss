@@ -1,1 +1,25 @@
 @use "./../01-abstracts/" as *;
+
+.wrapper {
+	padding: 0 24px;
+	min-width: 100vw;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	background-color: $eastern-blue;
+}
+
+.bg-top {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.bg-bottom {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
