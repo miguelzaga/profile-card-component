@@ -1,12 +1,16 @@
 import { useState } from "react";
 
+import bgTop from "/src/assets/images/bg-pattern-top.svg";
+import bgBottom from "/src/assets/images/bg-pattern-bottom.svg";
+import bgCard from "/src/assets/images/bg-pattern-card.svg";
+import imgVictor from "/src/assets/images/image-victor.jpg";
+
 function App() {
   return (
     <div className="wrapper">
-      <img className="bg-top" alt="" src="" />
-      <img className="bg-bottom" alt="" src="" />
       <main className="card">
-        <img className="card__img" alt="" src="" />
+        <img className="card__bg" alt="" src={bgCard} />
+        <img className="card__img" alt="" src={imgVictor} />
         <div className="card__container">
           <div className="card__info">
             <h1 className="card__name">Victor Crest</h1>
@@ -29,6 +33,8 @@ function App() {
           </ul>
         </div>
       </main>
+      <img className="bg-top" alt="" src={bgTop} />
+      <img className="bg-bottom" alt="" src={bgBottom} />
     </div>
   );
 }

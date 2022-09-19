@@ -9,17 +9,25 @@
 	justify-content: center;
 	align-items: center;
 	position: relative;
+	z-index: 0;
 	background-color: $eastern-blue;
+	overflow: clip;
+}
+
+.bg-top, .bg-bottom {
+	position: absolute;
+	z-index: -1;
+	max-width: unset;
+	width: 622px;
 }
 
 .bg-top {
-	position: absolute;
-	top: 0;
-	left: 0;
+	top: -355px;
+	left: -410px;
 }
 
 .bg-bottom {
-	position: absolute;
-	top: 0;
-	left: 0;
+	top: 276px;
+	left: 165px;
 }
+

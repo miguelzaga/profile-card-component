@@ -1,1 +1,17 @@
 @use "./../01-abstracts/" as *;
+
+.card {
+	background-color: white;
+	width: 100%;
+	max-width: 350px;
+	border-radius: 15px;
+	text-align: center;
+	overflow: clip;
+
+	&__img {
+		width: 96px;
+		margin: auto;
+		border-radius: 100%;
+		border: solid white 5px;
+	}
+}
