@@ -19,6 +19,7 @@
 	z-index: -1;
 	max-width: unset;
 	width: 622px;
+	opacity: 0.75;
 }
 
 .bg-top {
@@ -27,7 +28,7 @@
 }
 
 .bg-bottom {
-	top: 276px;
-	left: 165px;
+	bottom: -300px;
+	right: -400px;
 }
 

@@ -8,10 +8,59 @@
 	text-align: center;
 	overflow: clip;
 
+	&__bg {
+		height: 140px;
+	}
+
 	&__img {
 		width: 96px;
-		margin: auto;
+		margin: auto auto calc(96px / (-2));
 		border-radius: 100%;
-		border: solid white 5px;
+		outline: solid white 5px;
+		position: relative;
+		bottom: calc(96px / 2);
+	}
+
+	&__container {
+		margin-top: 24px;
+	}
+
+	&__name {
+		display: inline-block;		
+		margin-right: 9.5px;
+		margin-bottom: 9px;
+		line-height: 22px;
+	}
+
+	&__age {
+		display: inline-block;		
+		font-weight: 400;
+		color: $storm-gray;
+		line-height: 22px;
+	}
+	
+	&__location {
+		font-weight: 400;
+		font-size: rem(14px);
+		color: $storm-gray;
+		margin-bottom: 24px;
+		line-height: 17px;
+	}
+
+	&__stats {
+		display: flex;
+		justify-content: center;
+		gap: 40px;
+		border-top: solid 1px $athens-gray;
+		padding: 24px 52px 24px 41px;
+
+		&-num {
+			margin-bottom: 9px;
+		}
+
+		&-txt {
+			font-size: rem(10px);
+			letter-spacing: 1.5px;
+		}
 	}
 }
