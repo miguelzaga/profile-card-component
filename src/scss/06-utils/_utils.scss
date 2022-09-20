@@ -20,15 +20,29 @@
 	max-width: unset;
 	width: 622px;
 	opacity: 0.75;
+
+	@include breakpoint($lg){
+		width: 978px;
+	}
 }
 
 .bg-top {
 	top: -355px;
 	left: -410px;
+
+	@include breakpoint($lg){
+	top: -500px;
+	left: -260px;
+	}
 }
 
 .bg-bottom {
 	bottom: -300px;
 	right: -400px;
+
+	@include breakpoint($lg){
+	bottom: -640px;
+	right: -240px;
+	}
 }
 
